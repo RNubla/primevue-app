@@ -38,9 +38,9 @@ async function backendAdd() {
       <div class="p-8 text-lg font-bold"> Count is: {{ count }} </div>
 
       <div class="w-full space-x-2">
-        <button type="button" class="btn" @click="count++">Add 1</button>
+        <Button type="button" class="btn" label="Add 1" @click="count++"></Button>
 
-        <button type="button" class="btn" @click="backendAdd">Add 2 in backend</button>
+        <Button type="button" class="btn" label="Add 2 in backend" @click="backendAdd"></Button>
       </div>
     </div>
     <p>
