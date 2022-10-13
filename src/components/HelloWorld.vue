@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { invoke } from '@tauri-apps/api/tauri'
 defineProps<{ msg: string }>()
 
@@ -11,7 +12,7 @@ async function backendAdd() {
 <template>
   <div class="w-9/12 mx-auto">
     <h1>{{ msg }}</h1>
-
+    <Button label="primevue" />
     <p>
       Recommended IDE setup:
       <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
