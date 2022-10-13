@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.3.0",
   "scripts": {
-    "dev": "$env:RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "dev_win": "$env:RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
+    "dev": "RUST_BACKTRACE=1 concurrently -k \"tauri dev\" \"pnpm devtools\"",
     "build": "tauri build",
     "vite:dev": "vite dev",
     "vite:build": "vite build",
